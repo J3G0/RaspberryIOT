@@ -96,7 +96,7 @@ def sendTempToServer():
 	cpu_temp= "%.1f" % float(cpu_temp)
 	hum ="%.1f" %humidity
 	press = "%.1f" %pressure
-	urllib2.urlopen("http://11603121.pxl-ea-ict.be/EA-ICT-BA2/project/add_data.php?temp="+temp+"&cputemp="+cpu_temp+"&hum="+hum+"&pr="+press).read()
+	urllib2.urlopen("URL"+temp+"&cputemp="+cpu_temp+"&hum="+hum+"&pr="+press).read()
 	
 def sendHumToServer():
 	global temperature
@@ -122,7 +122,7 @@ def sendHumToServer():
 	cpu_temp = "%.1f" %cpu_temp
 	hum ="%.1f" %humidity
 	press = "%.1f" %pressure
-	urllib2.urlopen("http://11603121.pxl-ea-ict.be/EA-ICT-BA2/project/add_data.php?temp="+temp+"&cputemp="+cpu_temp+"&hum="+hum+"&pr="+press).read()
+	urllib2.urlopen("URL"+temp+"&cputemp="+cpu_temp+"&hum="+hum+"&pr="+press).read()
 
 def sendPressToServer():
 	global temperature
@@ -148,7 +148,7 @@ def sendPressToServer():
 	cpu_temp = "%.1f" %cpu_temp
 	hum ="%.1f" %humidity
 	press = "%.1f" %pressure
-	urllib2.urlopen("http://11603121.pxl-ea-ict.be/EA-ICT-BA2/project/add_data.php?temp="+temp+"&cputemp="+cpu_temp+"&hum="+hum+"&pr="+press).read()
+	urllib2.urlopen("URL"+temp+"&cputemp="+cpu_temp+"&hum="+hum+"&pr="+press).read()
 	
 	
 
